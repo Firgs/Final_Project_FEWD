@@ -1,0 +1,924 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.navbar {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    padding-top: 20px;
+}
+
+
+.brand-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    font-size: 2rem;
+    padding: 5%;
+    color: rgb(110, 139, 38);
+    align-content:flex-start;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.nav-items {
+    display:flex;
+}
+
+.nav-items li {
+    list-style-type:none;
+}
+
+.nav-items li a:hover {
+    color:rgb(60, 90, 20);
+   
+}
+
+.nav-items li a {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    font-family: 'Nunito', sans-serif;
+    padding-right: 40px;
+    color: rgb(110, 139, 38);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    background-color:rgb(110, 139, 38);
+    padding: 10px 20px;
+    border:none;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background-color:rgb(60, 90, 20);
+    color: white; 
+}
+
+.selected-page {
+    color: orange;
+}
+
+
+
+.burger-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.brand-name-mbl {
+    display: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* CSS FOR BURGER MENU IN TABLET AND MBL */
+
+@media (max-width: 820px) {
+
+    .brand-name-mbl {
+        display:flex;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        color: rgb(110, 139, 38);
+        align-content:flex-start;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 5%;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    
+    .burger-menu {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px 15px 5px;
+        color:orange;
+    }
+
+    .brand-name-mbl {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 1000;
+        font-size: 2rem;
+        color: rgb(110, 139, 38);
+        align-content:center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: rgb(110, 139, 38); 
+    }
+
+    .nav-items {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%;
+        padding: 5px 20px;
+    }
+
+    .nav-items li {
+        padding: 10px 0; 
+    }
+
+    .nav-items li a {
+        padding: 10px;
+    }
+
+    .nav-items li a:hover {
+        color:rgb(60, 90, 20);
+       
+    }
+
+    .nav-btn, .brand-name {
+        display: none;
+    }
+}
+
+/* section Who we are */
+
+
+
+.who-we-are {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    margin-top: 100px;
+    text-align:center;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
+
+.who-we-are-text {
+    align-items: center;
+    text-align:center;
+    background-color:rgb(110, 139, 38, 0.6);
+    max-width: 100%;
+    min-width: 450px;
+    min-height: 450px;
+    max-height: 500px;
+    color:white;
+    margin: 0;
+}
+
+
+.who-we-are-text h1  {
+    font-size: 2rem; 
+    font-weight: 900;
+    padding: 5% 5% 0% 5%;
+    margin: 2% 0%;
+}    
+
+.who-we-are-text h3 {
+    font-size: 1.2rem; 
+    font-weight: 500;
+    padding: 5% 10% 5% 10%;
+    text-align: justify;
+}
+
+.dog-lift {
+    max-width: 100%;
+    max-height: 500px;
+    align-items: center;
+    object-fit: cover;
+}
+
+.contact-us-btn {
+    background-color:rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-weight: 700;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(110, 139, 38);
+}
+
+.contact-us-btn:hover {
+    background-color:rgb(60, 90, 20);
+    color: white; 
+}
+
+@media (max-width: 820px) {
+
+    .who-we-are {
+        display:flex;
+        flex-direction: column;
+        justify-content:center; 
+        text-align:center;
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+    
+    .who-we-are-text {
+        align-items: center;
+        text-align:center;
+        background-color:rgb(110, 139, 38, 0.6);
+        color:white;
+        margin: 0;
+        min-width:100%;
+        min-height: 600px;
+        max-height: 650px;
+    }
+    
+    .who-we-are-text h1  {
+        font-size: 2rem; 
+        font-weight: 900;
+        text-align:center;
+        padding: 2% 10% 0% 10%;
+    
+        
+    }    
+    
+    .who-we-are-text h3 {
+        font-size: 1.5rem;
+        padding: 2% 10% 5% 10%;
+        text-align: justify;
+    }
+
+ 
+    
+    .who-we-are-picture img {
+        width: 100%;
+        height:100%;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .contact-us-btn {
+        background-color:rgb(255, 255, 255);
+        margin-top: 10%;
+        font-weight: 700;
+        padding: 10px 20px;
+        border:none;
+        border-radius: 30px;
+        text-decoration: none;
+        color: rgb(110, 139, 38);
+    }
+    
+    .contact-us-btn:hover {
+        background-color:rgb(60, 90, 20);
+        color: white; 
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .who-we-are {
+        display:flex;
+        flex-direction: column;
+        justify-content:center; 
+        text-align:center;
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+    
+    .who-we-are-text {
+        align-items: center;
+        text-align:center;
+        background-color:rgb(110, 139, 38, 0.6);
+        color:white;
+        margin: 0;
+        min-width:100%;
+        min-height:450px;
+        max-height: 500px;
+    }
+    
+    .who-we-are-text h1  {
+        font-size: 1.5rem; 
+        font-weight: 900;
+        text-align:center;
+        padding: 10% 10% 0% 10%;
+        margin: 0;
+    }    
+    
+    .who-we-are-text h3 {
+        font-size: 1rem;
+        padding: 5% 10% 10% 10%;
+        text-align: justify;
+    }
+
+    .who-we-are-picture {
+        margin: 0;
+        padding:0;
+    }
+    
+    .who-we-are-picture img {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .contact-us-btn {
+        background-color:rgb(255, 255, 255);
+        font-weight: 700;
+        padding: 10px 20px;
+        border:none;
+        border-radius: 30px;
+        text-decoration: none;
+        color: rgb(110, 139, 38);
+    }
+    
+    .contact-us-btn:hover {
+        background-color:rgb(60, 90, 20);
+        color: white; 
+    }
+
+}
+
+/* Section mission flex with 3 icons and titles */
+
+.our-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.lives, .force, .heros {
+    width:350px;
+}
+
+.our-values h1 {
+    color: rgb(110, 139, 38);
+    font-size: 2rem;
+    padding: 3%;
+    text-align: center;
+    font-weight: 900;
+   
+}
+
+.icons-values {
+
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:white;
+    padding: 0;
+}
+
+.icons-values li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+.icons-values img {
+    height: 180px;
+    width: 180px;
+    opacity: 0.7;
+}
+
+.icons-values p {
+    color:rgb(110, 139, 38, 0.6);
+    font-weight: 600;
+    padding-top: 3%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 820px) {
+
+    .icons-values {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5%;
+        padding-bottom: 5%
+    }
+    
+    .icons-values img {
+        height: 120px;
+        width: 120px;
+        opacity: 0.7;
+    }
+
+    .lives, .force, .heros {
+        width:250px;
+    }
+
+    .icons-values p {
+        color:rgb(110, 139, 38, 0.6);
+        font-weight: 600;
+        padding-top: 3%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+
+.lives, .force, .heros {
+    width:250px;
+}
+.our-values h1 {
+    color: rgb(110, 139, 38);
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+   
+}
+
+.icons-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap: 15px;
+    width: 100%;
+    margin: 5%;
+    padding-bottom: 10%
+}
+
+.icons-values img {
+    height: 130px;
+    width: 130px;
+    opacity: 0.8;
+}
+
+.icons-values p {
+    color:rgb(110, 139, 38, 0.8);
+    font-size: 1rem;
+}
+}
+
+
+/* Section Our Mission: */
+
+#mission {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    margin-top: 100px;
+    text-align:center;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
+
+.our-mission {
+    align-items: center;
+    text-align:center;
+    background-color:rgb(110, 139, 38, 0.6);
+    min-width:550px;
+    min-height: 350px;
+    max-height:550px;
+    color:white;
+    margin: 0;
+}
+
+.our-mission h1  {
+    font-size: 2rem; 
+    font-weight: 900;
+    padding:10% 5% 0% 5%;
+    margin: 0;
+
+}
+
+.our-mission h3 {
+    font-size: 1.2rem; 
+    padding: 5%;
+    font-weight: 500;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+.frenchie {
+    max-width: 100%;
+    min-width: 450px;
+    min-height: 350px;
+    max-height: 550px;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 820px) {
+
+    #mission {
+        display:flex;
+        flex-direction: column;
+        justify-content:center; 
+        text-align:center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .our-mission {
+        align-items: center;
+        text-align:center;
+        background-color:rgb(110, 139, 38, 0.6);
+        color:white;
+        margin: 0;
+        min-width:100%;
+        min-height: 550px;
+        max-height: 600px;
+    }
+    
+    .our-mission h1  {
+        font-size: 2rem; 
+        font-weight: 900;
+        text-align:center;
+        padding: 8% 10% 0% 10%;
+        margin: 0;
+    }
+    
+    .our-mission h3 {
+        font-size: 1.5rem;
+        padding: 2% 10% 10% 10%;
+        text-align: justify;
+    }
+
+    .frenchie {
+        min-width: 100%;
+        object-fit: cover;
+        margin-bottom: 10%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    #mission {
+        display:flex;
+        flex-direction: column;
+        justify-content:center; 
+        text-align:center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .our-mission {
+        align-items: center;
+        text-align:center;
+        background-color:rgb(110, 139, 38, 0.6);
+        color:white;
+        margin: 0;
+        padding-bottom: 5%;
+        min-width:100%;
+        min-height: 400px;
+        max-height: 450px;
+    }
+    
+    .our-mission h1  {
+        font-size: 1.5rem; 
+        font-weight: 900;
+        text-align:center;
+        padding: 10% 10% 3% 10%;
+        margin:0;
+    
+    }
+    
+    .our-mission h3 {
+        font-size: 1rem;
+        padding: 3% 10% 0% 10%;
+        text-align: justify;
+    }
+
+    .frenchie {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 10%;
+    }
+
+}
+/* How can you help section */
+
+.intro-how-help h1 {
+    color: rgb(110, 139, 38);
+    font-size: 2rem;
+    padding: 40px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+/* Flex with 4 images with hover to link services of adoption, foster, donate and volunteer on circular pictures and hover with word "adopt" etc */
+
+.how-to-help {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color:white;
+    gap: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.how-to-help article {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.how-to-help p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    /* text-align: center;  how to align in image center?*/
+    color: white;
+
+}
+
+.how-to-help .adopt {
+    background-image: url(dog-leash.jpg);
+  
+}
+
+.how-to-help .foster {
+    background-image: url(kitten_1.jpg);
+  
+}
+
+.how-to-help .donate {
+    background-image: url(love-heart.jpg);
+  
+}
+
+.how-to-help .volunteer {
+    background-image: url(volunteer_hands.jpg);
+  
+}
+
+.how-to-help .adopt, .how-to-help .foster, .how-to-help .donate, .how-to-help .volunteer {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-to-help article:hover {
+    background-color: rgba(60, 90, 20, 0.7);
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Our partners section with partners logos */
+
+
+.our-partners {
+
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;   
+}
+
+.our-partners h3 {
+    font-size: 2rem;
+    align-items: center;
+    color: rgb(2, 3, 1);
+    padding-top: 60px;
+}
+
+.partners-list {
+    display:flex;
+    flex-direction: flex-start;
+    justify-content:center; 
+    text-align:center;
+    gap: 20px;
+    padding: 20px 50px 50px 50px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.partners-list li img {
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*FOOTER*/
+
+footer {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(110, 139, 38, 0.2);
+}
+
+/* Aknowledgment country and diversity */
+
+.acknowledgment {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px;
+}
+
+.flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    gap:20px;
+    padding: 50px;
+}
+
+.flags li {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(110, 139, 38);
+}
+
+.flags li img {
+    height: 50px;
+}
+
+.registered-charity-logo {
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.acknowledgment p {
+    text-align: center;
+    color:rgb(110, 139, 38);
+    padding: 0% 5% 0% 5%;
+   
+
+}
+
+.all-rights {
+    text-align: center;
+    color:rgb(110, 139, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+
+@media (max-width: 820px) {
+
+    footer {
+        min-width: 100%;
+        padding: 0;
+        margin:0;
+    }
+    .acknowledgment {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align:center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    
+    .flags {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly ;
+        gap:10px;
+        padding: 10px;
+    }
+    
+    .flags li {
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(110, 139, 38);
+    }
+    
+    .flags li img {
+        height: 30px;
+    }
+    
+    .acknowledgment p {
+        text-align: center;
+        color:rgb(110, 139, 38);
+        padding: 5px 5px;
+        text-align: justify;
+    }
+    
+    .registered-charity-logo {
+        height: 80px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .all-rights {
+        text-align: center;
+        font-size: 0.8rem;
+        color:rgb(110, 139, 38);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        
+    }
+}
+
+#back-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.7);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight:900;
+    margin-right: 40px;
+
+  }
+
+
+
+
+
+
+

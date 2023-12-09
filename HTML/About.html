@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <title>Just Paws | About</title>
+    <link rel="stylesheet" href="../CSS/About.css">
+</head>
+<body>
+
+    <header>
+        <a class="brand-name-mbl" href="../index.html">Just Paws</a>
+       
+        <nav class="burger-menu">&#9776;</nav>
+          
+        <nav class="navbar">
+
+            <a class="brand-name" href="../index.html">Just Paws</a>
+            
+        
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/About.html"><span class="selected-page">About</span></a></li>
+                <li><a href="../HTML/Adopt.html">Adopt</a></li>
+                <li><a href="../HTML/Get_Involved.html">Get involved</a></li>
+                <li><a class="contact" href="../HTML/Contact.html">Contact</a></li>
+            </ul>  
+            
+            <a class="nav-btn" href="../HTML/donate.html">Donate Now</a>
+        </nav>
+
+    </header>
+
+    <button onclick="topFunction()" id="back-top-btn" title="Back to top"><span style="font-weight: bold; border: solid; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(-135deg);"></span></button>
+
+    <section class="who-we-are">
+        
+        <img class="dog-lift" src="../images/dogs&woman.jpg" alt="dog-hug">
+        
+        <section class="who-we-are-text">
+            <h1>Who we are</h1>
+            <h3>Born from the friendship of kindred spirits, Just Paws emerged. After years of fostering dogs and cats, our passion for providing ethical, supportive, and caring rescue became the heart of our mission. We are more than an organization; we are a community united by a shared love for our four-legged friends and a commitment to creating a world where their well-being is paramount.</h3>
+            <a class="contact-us-btn" href="../HTML/Contact.html">Contact Us</a>
+        </section>
+       
+    </section>
+    
+
+    <section class="our-values">
+
+        <h1>Our values</h1>
+
+        <ul class="icons-values">
+
+            <li class="lives">
+                <img src="../images/lives_icon.jpg.png" alt="lives_icon">
+                <p>Save Lives</p>
+            </li>  
+
+            <li class="force">
+                <img src="../images/force_icon.jpg.png" alt="force_icon">
+                <p>Force Free Training</p>
+            </li>
+        
+            <li class="heros">
+                <img src="../images/hero_icon.jpg.png" alt="heros_icon">
+                <p>Our volunteers are heros</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section id="mission">
+
+        <section class="our-mission">
+        
+            <h1>Our Mission</h1>
+            <h3>We are acompassionate force dedicated to rescuing and rehoming animals in need. With a heart for the voiceless, we strive to provide a haven for the abandoned and abused. Our mission is clear: rescue, rehabilitate, and find loving forever homes. Fueled by a community of passionate volunteers and generous donors, we are committed to making a positive impact, one paw at a time. Join us in our journey to create a world where every animal is cherished and protected.</h3>
+        </section>
+        <section class="mission-picture">   
+            <img class="frenchie" src="../images/frenchie.jpg" alt="frenchie">
+        </section>
+
+    </section>
+   
+    <footer>
+
+        <aside class="acknowledgment">
+
+            <ul class="flags">
+                <li><img src="../images/aboriginal_flag.png" alt="aboriginal-flag"></li>
+                <li><img src="../images/TSI_flag.jpg" alt="torres_strait_flag"></li>
+                <li><img src="../images/LGBTQ+_flag.png" alt="lgtbq+_flag"></li>
+            </ul>
+
+            <p>Humane Animal Rescue primarily operates on the stolen land of the Wurundjeri People of the Kulin Nation. <br> We acknowledge the Traditional Custodians of country throughout Australia and their connections to land, sea and community. We pay our respect to their Elders past and present and extend that respect to all Aboriginal and Torres Strait Islander peoples today.</p>
+
+            <p>Humane Animal Rescue values and celebrates diversity in our community. We are committed to providing animal care services that are inclusive and support equality and accessibility.</p>
+
+            <img class="registered-charity-logo" src="../images/registered-charity-1.png" alt="Registered-charity-logo">
+    
+        </aside>
+
+        <p class="all-rights">&copy; Just Paws. All rights reserved.</p>
+
+
+
+    </footer>
+</body>
+</html>
+    
+</body>
+</html>
+
+<script>
+      document.addEventListener('click', function () {
+        let burgerMenu = document.querySelector('.burger-menu');
+        let navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+        });
+    });
+
+    const backTopBtn = document.querySelector("#back-top-btn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backTopBtn.style.display = "block";
+    } else {
+        backTopBtn.style.display = "none";
+    }
+    }
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script>
