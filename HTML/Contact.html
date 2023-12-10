@@ -115,7 +115,11 @@
         let navbar = document.querySelector('.navbar');
 
         burgerMenu.addEventListener('click', function () {
-            navbar.classList.toggle('active');
+        navbar.classList.toggle('active');
         });
+    });
+
+    document.querySelector('.submit-btn').addEventListener('submit', function(event) {
+    event.preventDefault();
     });
 </script>

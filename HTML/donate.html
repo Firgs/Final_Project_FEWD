@@ -69,7 +69,7 @@
             </section>
 
             <section class="form-submit">
-                <button type="submit">Donate</button>
+                <button class="donate-btn" type="submit">Donate</button>
             </section>
         </form>
     </main>
@@ -105,7 +105,11 @@
         let navbar = document.querySelector('.navbar');
 
         burgerMenu.addEventListener('click', function () {
-            navbar.classList.toggle('active');
+        navbar.classList.toggle('active');
         });
+    });
+
+    document.querySelector('.donate-btn').addEventListener('donate', function(event) {
+    event.preventDefault();
     });
 </script>
