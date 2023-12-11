@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -18,8 +18,8 @@ header {
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 2%;
     width: 70%;
-    padding-top: 20px;
 }
 
 
@@ -33,7 +33,6 @@ header {
     align-items: center;
     text-decoration: none;
     list-style-type: none;
-
 }
 
 .nav-items {
@@ -45,8 +44,7 @@ header {
 }
 
 .nav-items li a:hover {
-    color:rgb(60, 90, 20);
-   
+    color:rgb(60, 90, 20);  
 }
 
 .nav-items li a {
@@ -81,8 +79,6 @@ header {
     color: orange;
 }
 
-
-
 .burger-menu {
     font-size: 1.5rem;
     cursor: pointer;
@@ -95,7 +91,7 @@ header {
     list-style-type: none;
 }
 
-/* CSS FOR BURGER MENU IN TABLET AND MBL */
+/* Burger Menu Navigation (tablet + mobile responsive */
 
 @media (max-width: 820px) {
 
@@ -109,10 +105,9 @@ header {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 10px;
+        margin: 5%;
         text-decoration: none;
         list-style-type: none;
-
     }
     
     
@@ -167,6 +162,7 @@ header {
     .nav-items li a {
         padding: 10px;
     }
+    
     .nav-items li a:hover {
         color:rgb(60, 90, 20);
        
@@ -178,9 +174,7 @@ header {
 }
 
 
-
-
-/* SECTION 1 Image background with text */
+/* SECTION 1 - Discover More - (image + text) */
 
 .intro-image-text {
     display:flex;
@@ -197,8 +191,8 @@ header {
     align-items: center;
     text-align:center;
     background-color:rgb(110, 139, 38, 0.6);
-    min-width:400px;
-    max-width: 100%;
+    min-width:350px;
+    max-width: 70%;
     max-height: 500px;
     min-height: 400px;
     color:white;
@@ -321,7 +315,7 @@ header {
 
 }
 
-/* How can you help section */
+/* SECTION 2 - How can you help? - (4 circles button (title + background image + effects) */
 
 .intro-how-help h1 {
     display: flex;
@@ -341,7 +335,7 @@ header {
     }
 }
 
-/* Flex with 4 images with hover to link services of adoption, foster, donate and volunteer on circular pictures and hover with word "adopt" etc */
+/* Grid with 4 images with link to adoption, foster, donate and volunteer on circular pictures and hover on word and picture. */
 
 .how-to-help {
     display: grid;
@@ -359,7 +353,6 @@ header {
 .adopt, .foster, .donate, .volunteer {
     text-decoration: none;
     list-style-type:none;
-
 }
 
 .how-to-help article {
@@ -377,27 +370,22 @@ header {
     text-transform: uppercase;
     margin: 0;
     color: white;
-
 }
 
 .how-to-help .adopt {
-    background-image: url(./images/dog-leash.jpg);
-  
+    background-image: url(./images/dog-leash.jpg);  
 }
 
 .how-to-help .foster {
-    background-image: url(./images/kitten_1.jpg);
-  
+    background-image: url(./images/kitten_1.jpg); 
 }
 
 .how-to-help .donate {
-    background-image: url(./images/love-heart.jpg);
-  
+    background-image: url(./images/love-heart.jpg);  
 }
 
 .how-to-help .volunteer {
-    background-image: url(./images/volunteer_hands.jpg);
-  
+    background-image: url(./images/volunteer_hands.jpg);  
 }
 
 .how-to-help .adopt, .how-to-help .foster, .how-to-help .donate, .how-to-help .volunteer {
@@ -436,26 +424,23 @@ header {
 
 @media (max-width: 820px) {
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}    
-
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
     
-.how-to-help {
-    display: grid;
-    align-items: center;
-    justify-content:center;
-    grid-template-columns: 1fr 1fr;
-    color:white;
-    gap: 15%;
-    padding: 5% 5% 10% 5%;
-    margin-bottom: 10%;
-}
-
-
+    .how-to-help {
+        display: grid;
+        align-items: center;
+        justify-content:center;
+        grid-template-columns: 1fr 1fr;
+        color:white;
+        gap: 15%;
+        padding: 5% 5% 10% 5%;
+        margin-bottom: 10%;
+    }
 
 }
 
@@ -470,9 +455,9 @@ body {
         gap: 40px;
         padding-left: 5%;
         padding-right: 5%;
-        width: 90%;
-        margin-top: 50px;
-        margin-bottom: 40px;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     .adopt {
@@ -522,10 +507,10 @@ body {
         transition: background-color 0.3s;
     }
     
-    }
+}
 
 
-/* care section Discover our mission */
+/* SECTION 3 - One Rescue at a time - (image + text) */
 
 .care {
     display:flex;
@@ -556,7 +541,6 @@ body {
     font-weight: 900;
     text-align:center;
     padding: 5%;
-
 }
 
 .our-mission-text h3 {
@@ -667,7 +651,7 @@ body {
     }
     
     .our-mission-text h3 {
-        font-size: 1.rem;
+        font-size: 1.2rem;
         padding: 5% 10% 10% 10%;
         text-align: justify;
     }
@@ -677,8 +661,7 @@ body {
 
 
 
-
-/* Socials */
+/* SECTION 4 - Socials- (links to socials) */
 
 .socials {
     display:flex;
@@ -852,6 +835,7 @@ footer {
     }
 }
 
+/* Style button Back-to-top */
 #back-top-btn {
     display: none;
     position: fixed;
@@ -864,7 +848,7 @@ footer {
     border-radius: 30px;
     padding: 10px;
     font-weight:900;
-    margin-right: 40px;
+    margin-right: 20px;
 
   }
 

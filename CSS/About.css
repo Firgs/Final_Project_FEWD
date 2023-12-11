@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -10,7 +10,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;
 }
 
 .navbar {
@@ -19,8 +18,8 @@ header {
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 2%;
     width: 70%;
-    padding-top: 20px;
 }
 
 
@@ -28,14 +27,12 @@ header {
     font-family: 'Nunito', sans-serif;
     font-weight: 1000;
     font-size: 2rem;
-    padding: 5%;
     color: rgb(110, 139, 38);
     align-content:flex-start;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     list-style-type: none;
-
 }
 
 .nav-items {
@@ -82,8 +79,6 @@ header {
 .selected-page {
     color: orange;
 }
-
-
 
 .burger-menu {
     font-size: 1.5rem;
@@ -179,9 +174,7 @@ header {
     }
 }
 
-/* section Who we are */
-
-
+/* SECTION 1 - Who we are - (image + text) */
 
 .who-we-are {
     display:flex;
@@ -376,7 +369,7 @@ header {
 
 }
 
-/* Section mission flex with 3 icons and titles */
+/* SECTION 2 - Our Values - (3 icons + titles) */
 
 .our-values {
     display: flex;
@@ -459,46 +452,44 @@ header {
 
 @media (max-width: 480px) {
     
+    .lives, .force, .heros {
+        width:250px;
+    }
+    .our-values h1 {
+        color: rgb(110, 139, 38);
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align: center;
+        font-weight: 900;
+    
+    }
 
+    .icons-values {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        gap: 15px;
+        width: 100%;
+        margin: 5%;
+        padding-bottom: 10%
+    }
 
-.lives, .force, .heros {
-    width:250px;
-}
-.our-values h1 {
-    color: rgb(110, 139, 38);
-    font-size: 1.5rem;
-    padding: 20px;
-    text-align: center;
-    font-weight: 900;
-   
-}
+    .icons-values img {
+        height: 130px;
+        width: 130px;
+        opacity: 0.8;
+    }
 
-.icons-values {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:white;
-    gap: 15px;
-    width: 100%;
-    margin: 5%;
-    padding-bottom: 10%
-}
-
-.icons-values img {
-    height: 130px;
-    width: 130px;
-    opacity: 0.8;
-}
-
-.icons-values p {
-    color:rgb(110, 139, 38, 0.8);
-    font-size: 1rem;
-}
+    .icons-values p {
+        color:rgb(110, 139, 38, 0.8);
+        font-size: 1rem;
+    }
 }
 
 
-/* Section Our Mission: */
+/* SECTION 3 - Our Mission - (image + text): */
 
 #mission {
     display:flex;
@@ -641,131 +632,7 @@ header {
     }
 
 }
-/* How can you help section */
 
-.intro-how-help h1 {
-    color: rgb(110, 139, 38);
-    font-size: 2rem;
-    padding: 40px;
-    text-align: center;
-    font-weight: 900;
-
-}
-
-/* Flex with 4 images with hover to link services of adoption, foster, donate and volunteer on circular pictures and hover with word "adopt" etc */
-
-.how-to-help {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    color:white;
-    gap: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 70%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.how-to-help article {
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.how-to-help p {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    /* text-align: center;  how to align in image center?*/
-    color: white;
-
-}
-
-.how-to-help .adopt {
-    background-image: url(dog-leash.jpg);
-  
-}
-
-.how-to-help .foster {
-    background-image: url(kitten_1.jpg);
-  
-}
-
-.how-to-help .donate {
-    background-image: url(love-heart.jpg);
-  
-}
-
-.how-to-help .volunteer {
-    background-image: url(volunteer_hands.jpg);
-  
-}
-
-.how-to-help .adopt, .how-to-help .foster, .how-to-help .donate, .how-to-help .volunteer {
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.how-to-help article:hover {
-    background-color: rgba(60, 90, 20, 0.7);
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: background-color 0.3s;
-}
-
-
-
-/* Our partners section with partners logos */
-
-
-.our-partners {
-
-    max-width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;   
-}
-
-.our-partners h3 {
-    font-size: 2rem;
-    align-items: center;
-    color: rgb(2, 3, 1);
-    padding-top: 60px;
-}
-
-.partners-list {
-    display:flex;
-    flex-direction: flex-start;
-    justify-content:center; 
-    text-align:center;
-    gap: 20px;
-    padding: 20px 50px 50px 50px;
-    text-decoration: none;
-    list-style: none;
-}
-
-.partners-list li img {
-    height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 /*FOOTER*/
 
@@ -899,6 +766,8 @@ footer {
         
     }
 }
+
+/* Style button Back-to-top */
 
 #back-top-btn {
     display: none;

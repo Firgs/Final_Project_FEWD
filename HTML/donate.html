@@ -34,7 +34,7 @@
 
     </header>
 
-    <form class="donation-form">
+    <form class="donation-form" id="myForm">
         <h2>Donation Form</h2>
         <form action="#" method="post">
 
@@ -50,13 +50,13 @@
                 <input type="email" name="email" id="email" placeholder="Enter your email">
             </section>
 
-            <section class="form-group">
-                <label for="amount">Select Amount:</label>
-                <select name="amount" id="amount">
-                    <option value="50">$50</option>
-                    <option value="150">$150</option>
-                    <option value="500">$500</option>
-                </select>
+            <section class="amounts">
+                <input type="checkbox" id="$50" class="amount">
+                <label for="amount1">$50</label>
+                <input type="checkbox" id="$150" class="amount">
+                <label for="amount2">$150</label>
+                <input type="checkbox" id="$300" class="amount">
+                <label for="amount3">$300</label>
             </section>
 
             <section class="form-group">
@@ -71,6 +71,11 @@
             <section class="form-submit">
                 <button class="donate-btn" type="submit">Donate</button>
             </section>
+
+            <div id="thankYou" style="display: none; text-align: center;">
+                <p>Thank You!</p>
+                <button onclick="closeThankYou()">Close</button>
+            </div>
         </form>
     </main>
 
@@ -96,20 +101,44 @@
     <p class="all-rights">&copy; Just Paws. All rights reserved.</p>
     </footer>
 
+    <script>
+        //Burger menu navigation bar active
+        document.addEventListener('click', function () {
+            let burgerMenu = document.querySelector('.burger-menu');
+            let navbar = document.querySelector('.navbar');
+    
+            burgerMenu.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+            });
+        });
+
+        //Prevent Sending Form with PreventDefault
+        document.querySelector('.donate-btn').addEventListener('donate', function(event) {
+        event.preventDefault();
+        });
+    
+        // Add event listener to all amount checkboxes
+            document.querySelectorAll('.amount').forEach(amount => {
+            amount.addEventListener('click', function() {
+        // Uncheck the other amount checkboxes
+            document.querySelectorAll('.amount').forEach(otherAmount => {
+                if (otherAmount !== amount) {
+                    otherAmount.checked = false;
+                }
+             });
+        // Enable customAmount input when all amount checkboxes are unticked
+            const allUnchecked = [...document.querySelectorAll('.amount')].every(box => !box.checked);
+            document.querySelector('#customAmount').disabled = !allUnchecked;
+        });
+        });
+    
+        // Add event listener to enable customAmount when clicked
+            document.querySelector('#customAmount').addEventListener('click', function() {
+        // Enable customAmount input when clicked
+            document.querySelector('#customAmount').disabled = false;
+        });
+        
+    </script>
 </body>
 </html>
 
-<script>
-    document.addEventListener('click', function () {
-        let burgerMenu = document.querySelector('.burger-menu');
-        let navbar = document.querySelector('.navbar');
-
-        burgerMenu.addEventListener('click', function () {
-        navbar.classList.toggle('active');
-        });
-    });
-
-    document.querySelector('.donate-btn').addEventListener('donate', function(event) {
-    event.preventDefault();
-    });
-</script>

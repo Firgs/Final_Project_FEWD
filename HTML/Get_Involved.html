@@ -85,11 +85,6 @@
 
     </section>   
 
-
-
-
-
-    </section>
     
     <section id="volunteer">
 
@@ -115,15 +110,12 @@
             <li><a href="https://lyka.com.au/?gclid=CjwKCAjwitShBhA6EiwAq3RqA3vMZDWcql0F9hQK8Q6cJ97BzQmaBAwzBo5ZVzXe7d0nPsqLzQdGehoCPtsQAvD_BwE"><img src="../images/lyka.png" alt="lyka"></a></li>
             <li><a href="https://thebarkbakery.com.au/"><img src="../images/bark_bakery.png" alt=" bark_bakery"></a></li>
             <li><a href="https://arcsupport.org.au/"><img src="../images/animal_cooperative.png" alt="ARC"></a></li>
-           
-    
         </ul>
 
     </section>
 
     <section class="donate" id="donate-id">
 
-  
         <img class="donation" src="../images/donate (1).jpg" alt="donation">
 
         <section class="donate-text">
@@ -134,7 +126,6 @@
             <a class="Donate-btn" href="../HTML/donate.html">Donate now</a>
 
         </section>
-
     </section>
     
 
@@ -159,33 +150,34 @@
 
         <p class="all-rights">&copy; Just Paws. All rights reserved.</p>
 
-
-
     </footer>
+
+        
+    <script>
+        document.addEventListener('click', function () {
+            let burgerMenu = document.querySelector('.burger-menu');
+            let navbar = document.querySelector('.navbar');
+
+            burgerMenu.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+            });
+        });
+
+        const backTopBtn = document.querySelector("#back-top-btn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backTopBtn.style.display = "block";
+        } else {
+            backTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 </html>
-    
-<script>
-    document.addEventListener('click', function () {
-        let burgerMenu = document.querySelector('.burger-menu');
-        let navbar = document.querySelector('.navbar');
-
-        burgerMenu.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-        });
-    });
-
-    const backTopBtn = document.querySelector("#back-top-btn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backTopBtn.style.display = "block";
-    } else {
-        backTopBtn.style.display = "none";
-    }
-    }
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    }
-</script>
+ 

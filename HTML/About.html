@@ -34,6 +34,7 @@
 
     </header>
 
+    <!-- Button back to top with style -->
     <button onclick="topFunction()" id="back-top-btn" title="Back to top"><span style="font-weight: bold; border: solid; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(-135deg);"></span></button>
 
     <section class="who-we-are">
@@ -71,7 +72,6 @@
             </li>
 
         </ul>
-
     </section>
 
     <section id="mission">
@@ -84,7 +84,6 @@
         <section class="mission-picture">   
             <img class="frenchie" src="../images/frenchie.jpg" alt="frenchie">
         </section>
-
     </section>
    
     <footer>
@@ -106,37 +105,36 @@
         </aside>
 
         <p class="all-rights">&copy; Just Paws. All rights reserved.</p>
-
-
-
     </footer>
+    
+    <script>
+
+        //burger bar navigation menu
+        document.addEventListener('click', function () {
+            let burgerMenu = document.querySelector('.burger-menu');
+            let navbar = document.querySelector('.navbar');
+
+            burgerMenu.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+            });
+        });
+
+        //Back to top button when scrolling down, it will appear and when clicked will take you top page.
+        const backTopBtn = document.querySelector("#back-top-btn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backTopBtn.style.display = "block";
+        } else {
+            backTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 </html>
     
-</body>
-</html>
-
-<script>
-      document.addEventListener('click', function () {
-        let burgerMenu = document.querySelector('.burger-menu');
-        let navbar = document.querySelector('.navbar');
-
-        burgerMenu.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-        });
-    });
-
-    const backTopBtn = document.querySelector("#back-top-btn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backTopBtn.style.display = "block";
-    } else {
-        backTopBtn.style.display = "none";
-    }
-    }
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    }
-</script>

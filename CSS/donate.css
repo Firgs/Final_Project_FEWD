@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -10,7 +10,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;
 }
 
 .navbar {
@@ -19,8 +18,8 @@ header {
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 2%;
     width: 70%;
-    padding-top: 20px;
 }
 
 
@@ -28,7 +27,6 @@ header {
     font-family: 'Nunito', sans-serif;
     font-weight: 1000;
     font-size: 2rem;
-    padding: 5%;
     color: rgb(110, 139, 38);
     align-content:flex-start;
     justify-content: center;
@@ -97,7 +95,7 @@ header {
     list-style-type: none;
 }
 
-/* CSS FOR BURGER MENU IN TABLET AND MBL */
+/* Burger Menu Navigation (tablet + mobile responsive */
 
 @media (max-width: 820px) {
 
@@ -180,14 +178,13 @@ header {
 }
 
 
-/* Donation Form */
+/* DONATION FORM */
 
 .donation-form {
     max-width: 400px;
     margin: 0 auto;
     padding-top: 50px;
-    text-align: left; 
-    
+    text-align: left;     
 }
 
 .donation-form h2 {
@@ -245,6 +242,11 @@ header {
     margin-bottom: 100px;
 }
 
+.amounts {
+    display: flex;
+    flex-direction: row;
+  }
+
 .donation-form button:hover {
     background-color:rgb(60, 90, 20);
     color: white;
@@ -256,10 +258,7 @@ header {
         max-width:70%;
         padding: 0% 10% 0% 10%;
     }
-
 }
-
-
 
 
 /*FOOTER*/
@@ -326,10 +325,8 @@ footer {
     padding-bottom: 40px;
     max-width: 70%;
     margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-right: 15%; 
 }
-
 
 @media (max-width: 820px) {
 
@@ -382,7 +379,6 @@ footer {
         align-items: center;
     }
     
-    
     .all-rights {
         text-align: center;
         font-size: 0.8rem;
@@ -390,11 +386,11 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 40px;
-        
+        padding-bottom: 40px;  
     }
 }
 
+/* Style button Back-to-top */
 #back-top-btn {
     display: none;
     position: fixed;

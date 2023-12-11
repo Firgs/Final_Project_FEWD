@@ -52,42 +52,38 @@
 
         <h1>How can you help?</h1>
 
+        <section class="how-to-help">
+
+            <a href="./HTML/Adopt.html" class="adopt">
+                <article class="overlay">
+                    <p>Adopt</p>
+                </article>    
+            </a>
+
+            <a href="./HTML/Get_Involved.html#foster" class="foster">
+                <article class="overlay">
+                    <p>Foster</p>
+                </article>    
+            </a>
+
+            <a href="./HTML/donate.html" class="donate">
+                <article class="overlay">
+                    <p>Donate</p>
+                </article>
+                
+            </a>
+
+            <a href="./HTML/Get_Involved.html#volunteer" class="volunteer">
+                <article class="overlay">
+                    <p>Volunteer</p>
+                </article>
+            </a>
+
+        </section>
     </section>    
 
-
-
-    <section class="how-to-help">
-
-        <a href="./HTML/Adopt.html" class="adopt">
-            <article class="overlay">
-                <p>Adopt</p>
-            </article>    
-        </a>
-
-        <a href="./HTML/Get_Involved.html#foster" class="foster">
-            <article class="overlay">
-                <p>Foster</p>
-            </article>    
-        </a>
-
-        <a href="./HTML/donate.html" class="donate">
-            <article class="overlay">
-                <p>Donate</p>
-            </article>
-            
-        </a>
-
-        <a href="./HTML/Get_Involved.html#volunteer" class="volunteer">
-            <article class="overlay">
-                <p>Volunteer</p>
-            </article>
-        </a>
-
-    </section>
-
     <section class="care">
-
-        
+    
         <img class="woman-pic" src="./images/womanandcat.jpg" alt="woman-cat">
 
 
@@ -100,8 +96,6 @@
             <a class="our-mission-btn" href="./HTML/About.html#mission">Our Mission</a>
 
         </section>
-
-    
     </section>
 
     <section class="socials">
@@ -119,8 +113,7 @@
                     <img src="./images/insta-icon.png" alt="insta"> 
                     </a>
             </li>
-        </ul>        
-        
+        </ul>            
     </section>
 
     <footer>
@@ -141,35 +134,35 @@
     
         </aside>
 
-    <p class="all-rights">&copy; Just Paws. All rights reserved. For educational purposes only.</p>
-
-
+        <p class="all-rights">&copy; Just Paws. All rights reserved. For educational purposes only.</p>
 
     </footer>
+    <script>
+
+        //burger bar navigation menu
+        document.addEventListener('click', function () {
+            let burgerMenu = document.querySelector('.burger-menu');
+            let navbar = document.querySelector('.navbar');
+    
+            burgerMenu.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+            });
+        });
+    
+        //Back to top button when scrolling down, it will appear and when clicked will take you top page.
+        const backTopBtn = document.querySelector("#back-top-btn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backTopBtn.style.display = "block";
+        } else {
+            backTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
-
-<script>
-    document.addEventListener('click', function () {
-        let burgerMenu = document.querySelector('.burger-menu');
-        let navbar = document.querySelector('.navbar');
-
-        burgerMenu.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-        });
-    });
-
-    const backTopBtn = document.querySelector("#back-top-btn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backTopBtn.style.display = "block";
-    } else {
-        backTopBtn.style.display = "none";
-    }
-    }
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    }
-</script>

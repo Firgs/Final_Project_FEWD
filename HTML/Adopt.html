@@ -41,7 +41,6 @@
             <h1>Available to adopt</h1>
         </article>
 
-        <!-- Grid with 9 animals to adopt (if time make 3 pages) -->
 
         <section class="grid-animals">
 
@@ -115,8 +114,6 @@
                 </section>    
                 <a class="view-profile-btn" href="https://www.petrescue.com.au/listings/1001302?utm_medium=card_link&utm_source=feed&utm_campaign=https://www.petrescue.com.au/_feed?member=+12062&page=2">View Profile</a>
             </section>
-
-
         </section>
 
     </main>    
@@ -142,32 +139,33 @@
         <p class="all-rights">&copy; Just Paws. All rights reserved.</p>
 
     </footer>
+
+    
+    <script>
+        document.addEventListener('click', function () {
+            let burgerMenu = document.querySelector('.burger-menu');
+            let navbar = document.querySelector('.navbar');
+
+            burgerMenu.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+            });
+        });
+
+        const backTopBtn = document.querySelector("#back-top-btn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backTopBtn.style.display = "block";
+        } else {
+            backTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+    </script>
     
 </body>
 </html>
-
-<script>
-    document.addEventListener('click', function () {
-        let burgerMenu = document.querySelector('.burger-menu');
-        let navbar = document.querySelector('.navbar');
-
-        burgerMenu.addEventListener('click', function () {
-        navbar.classList.toggle('active');
-        });
-    });
-
-    const backTopBtn = document.querySelector("#back-top-btn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backTopBtn.style.display = "block";
-    } else {
-        backTopBtn.style.display = "none";
-    }
-    }
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    }
-
-</script>
